@@ -11,6 +11,9 @@ def finiteHorizon():
     rewards = [[5,10], [-1]]
 
     values = [[0 for x in range(states)] for y in range(timeEpochs)]
+
+    values[-1] = [0,0] #endRewards
+
     chosenActions = [[0 for x in range(states)] for y in range(timeEpochs)]
 
     for time in range(timeEpochs):
